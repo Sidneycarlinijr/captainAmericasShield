@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        .circle{
+            /* transform: rotate(180deg); */
+            border-radius: 50%;
+            justify-content: center;
+            align-items:center; 
+            display: flex;
+            border: 1px solid #3c404f;
+            margin: auto;
+
+            background: linear-gradient(to right, var(--color1), var(--color2), var(--color1))
+        }
+        #externalcircle{
+            height: 256px;
+            width:256px;
+            --color1:red;
+            --color2:#C10101;
+        }
+        #circle1{
+            height: 206px;
+            width: 206px;
+            --color1: white;
+            --color2: white;
+        }
+        #circle2{
+            height: 156px;
+            width: 156px;
+            --color1:red;
+            --color2:#C10101;
+        }
+        #circle3{
+            height: 106px;
+            width: 106px;
+            --color1: blue;
+            --color2:#02264D;
+        }
+        #star{
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 35px  solid white;
+            transform: rotate(180deg);
+        }
+        #star:before{
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 35px  solid white;
+            transform: rotate(70deg);
+            content: "";
+            position: absolute;
+            left: -50px;
+        }
+        #star:after{
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 35px  solid white;
+            transform: rotate(-70deg);
+            content: "";
+            position: absolute;
+            left: -48.8px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="externalcircle" class="circle">
+        <div id="circle1" class="circle">
+            <div id="circle2" class="circle">
+                <div id="circle3" class="circle">
+                    <div id= "star">                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
